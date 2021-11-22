@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false}));
 
 
 //turn on routes
-
+app.use(require('./routes'))
 
 //PORT connection 
 sequelize.sync({ force: false }).then(() => {
